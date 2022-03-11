@@ -1,0 +1,142 @@
+how to create angular project ?
+ng new pmit 
+
+
+
+angular --> framework ---> frontend ---> browser --> view 
+
+
+
+node --> logic --> controller 
+
+angular --> logic ---> component --> independant 
+
+	signup ==>	
+	login ==>
+	add role ==>
+ 	list role ==> 
+
+
+component ==> 4
+		1) .ts  --> logic 
+		2) .html --> View
+		3) .css --> stylesheet file 
+		4) .spec --> test cases 
+-------------------------------------------------------------
+lang ? 
+ts ==> type script ==> [ angular 1 ==> js ] [ oop ] 
+google 
+-------------------------------------------------------------
+server ==> run ==> 
+
+ng serve ==> server start 
+ng serve --open 
+
+ng s --o 
+-------------------------------------------------------------
+ 
+how to generate component? 
+
+ng generate componenet name-of-the-component 
+
+ng g c signup [ 4 file ] 
+ng g c login 
+ng g c forgetpassword 
+
+
+pmit ==> ahd -> mum ==> near by local vada  [ gun ? ] 
+
+ng g c user/add-question 
+
+ng g c admin/list-question 
+-------------------------------------------------------------
+
+file ==> 
+	src 
+		app
+		
+
+		app.module.ts --> component--> no manual entry
+			      --> lib / external modules 
+		app.routing.module.ts ==> component url | routes 
+
+
+		app.component.ts --> default parent component --> main component -- default load 
+ 
+
+
+-------------------------------------------------------------
+service 	->2 file
+		login-service.ts -> logic 
+		login-service-spec.ts   --> test  
+		ng g s login
+		api calling 
+
+-------------------------------------------------------------
+
+
+spring --> html / jsp file 
+
+	single page application
+
+		index.html 
+			login
+			signup 
+
+
+
+
+
+-------------------------------------------------------------
+
+ngModel --> lib import -->  FormsModule 
+
+-------------------------------------------------------------
+
+
+session service --> 
+
+	call your node api -
+
+	HttpClientModule 
+	HttpClient 
+
+
+
+api functions ! 
+
+
+1) httpClient 
+2) return Observable<any> 
+3) api use --> subscrible 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
