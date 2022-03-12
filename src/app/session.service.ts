@@ -16,7 +16,7 @@ export class SessionService {
 
   //signup 
   signupApi(user:any):Observable<any>{
-    return this.httpClient.post("http://localhost:3000/signup",user)
+    return this.httpClient.post("http://localhost:3000/savecustomer",user)
   }
   //forgetpassword 
 

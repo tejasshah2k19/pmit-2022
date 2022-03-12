@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { SessionService } from '../session.service';
 
 @Component({
@@ -13,7 +15,7 @@ export class SignupComponent implements OnInit {
   password:string= ""
 
 
-  constructor(private sessionService:SessionService) { }
+  constructor(private sessionService:SessionService,private tsService:ToastrService,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -24,9 +26,15 @@ export class SignupComponent implements OnInit {
     let user = {"firstName":this.firstName,"email":this.email,"password":this.password}
     this.sessionService.signupApi(user).subscribe(resp=>{
       if(resp.status == -1){
-
+          //error 
+          this.tsService.error(resp.msg,"",{timeOut:3000})
       }else{
-        
+        //success 
+        //navigate to login 
+
+        this.tsService.success(resp.msg,"",{timeOut:3000})
+        this.router.navigateByUrl("/login")
+     
       }
     })
 
